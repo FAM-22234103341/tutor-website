@@ -199,13 +199,16 @@ img {
 }
 
 /* Hero */
+/* Hero Section */
 .hero {
-  background: #000 url('../images/header-background.jpg') center center/cover
-    no-repeat;
-  padding: 11.5rem 2rem 8rem;
-  color: #fff;
-  overflow-x: hidden;
-  position: relative;
+    background: url("../images/header-background (1).jpg")
+        center center / cover no-repeat;
+
+    padding: 11.5rem 2rem 8rem;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    min-height: 600px;
 }
 
 .hero .hero-flex {

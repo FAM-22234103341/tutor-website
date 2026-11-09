@@ -27,10 +27,10 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" ara-label="Main Navigation">
         <div class="navbar-flex container">
 
-            <a href="#" aria-label="Tutor Home">
+            <a href="#" aria-label="Tutor Home Link">
                 <img src="images/logo (1).svg" alt="Tutor Logo">
             </a>
 
@@ -47,8 +47,7 @@
                     <li>
                         <a href="https://facebook.com"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Facebook">
+                            aria-label="Follow us on Facebook">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                     </li>
@@ -56,8 +55,7 @@
                     <li>
                         <a href="https://twitter.com"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Twitter">
+                            aria-label="Follow us on Twitter">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
@@ -68,14 +66,15 @@
             <div class="mobile-menu">
 
                 <button class="mobile-menu-toggle"
-                    type="button"
-                    aria-label="Toggle navigation menu"
-                    aria-expanded="false">
+                    role="button"
+                    aria-label="Open mobile menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu-items" tabindex="0">
 
                     <i class="fas fa-bars fa-2x"></i>
                 </button>
 
-                <div class="mobile-menu-items">
+                <div id="mobile-menu-items" class="mobile-menu-items">
                     <ul class="mobile-menu-list">
 
                         <li><a href="#">Home</a></li>
@@ -549,20 +548,20 @@
         <div class="stats-content">
             <div class="stats-numbers">
                 <div>
-                    <h3>2000+</h3>
-                    <p>Happy Users</p>
+                    <h3 aria-labelledby="stats-happy-users">2000+</h3>
+                    <p id="stats-happy-users">Happy Users</p>
                 </div>
                  <div>
-                    <h3>358</h3>
-                    <p>Issues Solved</p>
+                    <h3 aria-labelledby="stats-issues-solved">358</h3>
+                    <p id="stats-issues-solved">Issues Solved</p>
                 </div>
                  <div>
-                    <h3>980</h3>
-                    <p>Good Reviews</p>
+                    <h3 aria-labelledby="stats-good-reviews">980</h3>
+                    <p id="stats-good-reviews">Good Reviews</p>
                 </div>
                  <div>
-                    <h3>216</h3>
-                    <p>Case Studies</p>
+                    <h3 aria-labelledby="stats-case-studies">216</h3>
+                    <p  id="stats-case-studies">Case Studies</p>
                 </div>
             </div>
             <p class="stats-text">
